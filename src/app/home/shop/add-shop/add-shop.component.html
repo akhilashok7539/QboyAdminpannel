@@ -69,6 +69,40 @@
                 </div>
 
                 <div class="col-sm-4">
+                    <label for="">Restaurant Type </label>
+
+                    <select name="" id="" class="form-control" [(ngModel)]="rtype" [ngClass]="{ 'is-invalid': submitted && f.rtype.errors }" formControlName="rtype">
+                        <option value="Choose a option" disabled selected>Choose a option </option>
+                        <option value="">INDIAN</option>
+                        <option value="">ARABIAN</option>
+                        <option value="">CHINESE</option>
+                        <option value="">ITALIAN</option>
+                        <option value="">MEXICO</option>
+                    </select>
+                    <div *ngIf="submitted && f.rtype.errors" class="invalid-feedback">
+                        <div *ngIf="f.rtype.errors.required">Restaurant type is required</div>
+
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <label for="">Rating </label>
+
+                    <select name="" id="" class="form-control" [(ngModel)]="rating" [ngClass]="{ 'is-invalid': submitted && f.rating.errors }" formControlName="rating">
+                        <option value="Choose a option" disabled selected>Choose a option </option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                    </select>
+                    <div *ngIf="submitted && f.rating.errors" class="invalid-feedback">
+                        <div *ngIf="f.rating.errors.required">Rating is required</div>
+
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
                     <label for="">Shop Opening Time </label>
                     <input type="time" class="form-control" placeholder="Enter Your Shop Opening Time" [(ngModel)]="sotime" [ngClass]="{ 'is-invalid': submitted && f.sotime.errors }" formControlName="sotime">
 
@@ -128,6 +162,22 @@
                     </div>
                 </div>
 
+                <div class="col-sm-4">
+                    <label for="">Delivery Time</label>
+                    <input type="number" class="form-control" placeholder="Enter Your Delivery Charge" [(ngModel)]="dtime" [ngClass]="{ 'is-invalid': submitted && f.dtime.errors }" formControlName="dtime">
+
+                    <div *ngIf="submitted && f.dtime.errors" class="invalid-feedback">
+                        <div *ngIf="f.dtime.errors.required">Delivery time is required</div>
+
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <label for="">Tile / Block</label>
+                    <br> Tile
+                    <input type="radio"> Block
+                    <input type="radio">
+                </div>
 
                 <div class="col-sm-4">
                     <label for="">Show / Hide</label>

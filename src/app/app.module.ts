@@ -69,6 +69,9 @@ import { EditPriceUpdatorComponent } from './settings/price-updator/edit-price-u
 import { PreOrdersComponent } from './home/pre-orders/pre-orders.component';
 import { AddPreOrdersComponent } from './home/pre-orders/add-pre-orders/add-pre-orders.component';
 import { EditPreOrdersComponent } from './home/pre-orders/edit-pre-orders/edit-pre-orders.component';
+import { TopDealsComponent } from './top-deals/top-deals.component';
+import { AddTopDealsComponent } from './top-deals/add-top-deals/add-top-deals.component';
+import { EditTopDealsComponent } from './top-deals/edit-top-deals/edit-top-deals.component';
 // import { AddPriceUpdatorComponent } from './settings/add-price-updator/add-price-updator.component';
 // import { EditPriceUpdatorComponent } from './settings/edit-price-updator/edit-price-updator.component';
 
@@ -137,6 +140,9 @@ import { EditPreOrdersComponent } from './home/pre-orders/edit-pre-orders/edit-p
     PreOrdersComponent,
     AddPreOrdersComponent,
     EditPreOrdersComponent,
+    TopDealsComponent,
+    AddTopDealsComponent,
+    EditTopDealsComponent,
   ],
   imports: [
     BrowserModule,

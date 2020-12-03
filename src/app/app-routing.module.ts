@@ -44,6 +44,8 @@ import { ShopAdminOffersComponent } from './shop_admin_section/shop-admin-offers
 import { ShopAdminOrdersComponent } from './shop_admin_section/shop-admin-orders/shop-admin-orders.component';
 import { SalesReportComponent } from './shop_admin_section/shop-admin-reports/sales-report/sales-report.component';
 import { ShopAdminReportsComponent } from './shop_admin_section/shop-admin-reports/shop-admin-reports.component';
+import { AddTopDealsComponent } from './top-deals/add-top-deals/add-top-deals.component';
+import { TopDealsComponent } from './top-deals/top-deals.component';
 
 const routes: Routes = [
   {path:'',pathMatch:"full",redirectTo:"login"},
@@ -91,26 +93,8 @@ const routes: Routes = [
   {path:'addpriceupdator',component:AddPriceUpdatorComponent},
   {path:'preorders',component:PreOrdersComponent},
   {path:'addpreorders',component:AddPreOrdersComponent},
-
-
-
-
-
-
-  
-
-
-
-
- 
-
- 
-
- 
-
-  
-
-
+  {path:'topdeals',component:TopDealsComponent},
+  {path:'addtopdeals',component:AddTopDealsComponent},
 
 
 

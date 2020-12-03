@@ -44,12 +44,15 @@ export class AddShopComponent implements OnInit {
   saddress;
   sln;
   sphn;
+  rtype;
+  rating;
   sotime;
   sctime;
   movalue;
   sdperc;
   pucharge;
   dcharge;
+  dtime;
   check;
   checkeddays;
   constructor(private fb: FormBuilder) { }
@@ -61,12 +64,15 @@ export class AddShopComponent implements OnInit {
       saddress: ['', Validators.required],
       sln: ['', Validators.required],
       sphn: ['', Validators.required],
+      rating:['', Validators.required],
+      rtype: ['', Validators.required],
       sotime: ['', Validators.required],
       sctime: ['', Validators.required],
       movalue: ['', Validators.required],
       sdperc: ['', Validators.required],
       pucharge: ['', Validators.required],
       dcharge: ['', Validators.required],
+      dtime: ['', Validators.required],
       check: ['', Validators.required],
       checkeddays: this.fb.array([]),
     })
